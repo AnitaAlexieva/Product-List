@@ -1,0 +1,11 @@
+
+.app-wrapper{
+    padding: 40px 60px;
+}
+.app-content{
+    display: flex;
+    gap: 30px;
+}
+.desserts-container{
+    flex: 1 1 0;
+}
