@@ -12,8 +12,8 @@ export default function DessertsPage() {
             <h3>Your Cart (0)</h3>
             <div className="cart">
               <div className="emty-cart">
-              <img src="\images\illustration-empty-cart.svg" alt="emty" />
-              <p>Your added items will appear here </p>
+              <img className="empty-img" src="\images\illustration-empty-cart.svg" alt="emty" />
+              <p className="empty-p">Your added items will appear here </p>
               </div>
             </div>
           </div>

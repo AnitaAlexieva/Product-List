@@ -1,6 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poetsen+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap');
 
 .app-wrapper{
-    padding: 40px 60px;
+    padding: 70px 80px;
 }
 .app-content{
     display: flex;
@@ -8,4 +9,23 @@
 }
 .desserts-container{
     flex: 1 1 0;
+}
+h3{
+    color:  hsl(14, 86%, 42%);
+    font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 20px;
+}
+.empty-img{
+    padding: 10px 30px;
+}
+.cart{
+    padding: 20px;
+}
+.empty-p{
+    font-family: "Lato", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color:hsl(12, 20%, 44%);
 }
