@@ -10,6 +10,9 @@
 .desserts-container{
     flex: 1 1 0;
 }
+h3, h4, p {
+    margin: 0;
+}
 h1{
     color:  hsl(14, 65%, 9%);
     font-family: "Lato", sans-serif;
@@ -66,4 +69,25 @@ h3{
     position: relative;
     bottom: 30px;
     left: 50px;
+}
+.simple-name{
+    color:  hsl(12, 20%, 44%);
+    margin: -20px 0 0 0;
+    font-family: "Lato", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+.whole-name{
+    margin: 0;
+    padding: 10px 0;
+    color: hsl(14, 65%, 9%);
+    font-family: "Lato", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+.price-p{
+    color:  hsl(14, 86%, 42%);
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: normal;
 }

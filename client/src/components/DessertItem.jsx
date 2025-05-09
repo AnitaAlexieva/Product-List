@@ -10,9 +10,9 @@ export default function DessertItem() {
         <button className="add-cart-btn">Add to Cart</button>
         </div>
         <div className="dessert-description">
-          <h4>Waffle</h4>
-          <h3>Waffle with Berries</h3>
-          <p>$6.50</p>  
+          <h4 className="simple-name">Waffle</h4>
+          <h3 className="whole-name">Waffle with Berries</h3>
+          <p className="price-p">$6.50</p>  
         </div>
       </div>
     )
