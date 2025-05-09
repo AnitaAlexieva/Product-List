@@ -1,8 +1,10 @@
 export default function DessertItem() {
     return(
         <div className="dessert">
-        <div className="img-dessert">
-          <img src="\images\image-waffle-tablet.jpg" alt="dessert" />
+        <div className="img-dessert-div">
+          <img className="img-dessert" src="\images\image-waffle-tablet.jpg" alt="dessert" />
+
+        </div>
         <div className="button-add-div">
         <img src="\public\images\icon-add-to-cart.svg" alt="add-to-cart" />
         <button className="add-cart-btn">Add to Cart</button>

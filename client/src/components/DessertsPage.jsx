@@ -6,7 +6,12 @@ export default function DessertsPage() {
         <div className="app-content">
           <div className="desserts-container">
             <h1>Desserts</h1>
+            <div className="all-desserts">
             <DessertItem/>
+            <DessertItem/>
+            <DessertItem/>
+
+            </div>
           </div>
           <div className="cart-container">
             <h3>Your Cart (0)</h3>
