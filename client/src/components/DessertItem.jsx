@@ -1,8 +1,18 @@
+import { useState } from "react"
+
 export default function DessertItem() {
-    return(
-        <div className="dessert">
-        <div className="img-dessert-div">
-          <img className="img-dessert" src="\images\image-waffle-tablet.jpg" alt="dessert" />
+  const [isAdded, setIsAdded] = useState(false);
+  const [count, setCount] = useState(0);
+
+  const smallCount = () => {
+    if (count > 0) {
+      setCount(count - 1)
+
+    } else {
+      setCount(0);
+
+    }
+  }
 
         </div>
         <div className="button-add-div">
