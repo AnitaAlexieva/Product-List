@@ -15,5 +15,6 @@ export default function DessertItem() {
           <p className="price-p">$6.50</p>  
         </div>
       </div>
-    )
+    </div>
+  )
 }
