@@ -58,6 +58,9 @@ h3{
     font-family: "Lato", sans-serif;
     font-weight: 600;
     font-size: 17px;
+}.add-cart-btn:hover{
+    color:  hsl(14, 86%, 42%);
+    cursor: pointer;
 }
 .added-btn{
     display: flex;
@@ -65,7 +68,7 @@ h3{
 }
 .button-add-div{
     display: flex;
-    border: 1px solid hsl(12, 20%, 44%);
+    border: 2px solid hsl(12, 20%, 44%);
     max-width: 130px;
     padding: 13px 32px;
     background-color: aliceblue;
@@ -74,6 +77,11 @@ h3{
     position: relative;
     bottom: 30px;
     left: 43px;
+}
+.button-add-div:hover{
+    border: 2px solid  hsl(14, 86%, 42%);
+    cursor: pointer;
+    color:  hsl(14, 86%, 42%);
 }
 .simple-name{
     color:  hsl(12, 20%, 44%);
