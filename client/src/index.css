@@ -65,6 +65,13 @@ h3{
 .added-btn{
     display: flex;
     gap: 50px;
+    color: white;
+}
+.operation{
+    border-radius: 50%;
+    border: 1px solid white;
+    background-color:  hsl(14, 86%, 42%);
+    color: white;
 }
 .button-add-div{
     display: flex;
@@ -77,6 +84,19 @@ h3{
     position: relative;
     bottom: 30px;
     left: 43px;
+}
+.button-added-div{
+    background-color: hsl(14, 86%, 42%);
+    display: flex;
+    border: 2px solid hsl(14, 86%, 42%);
+    max-width: 130px;
+    padding: 13px 32px;
+    justify-content: center;
+    border-radius: 40px;
+    position: relative;
+    bottom: 30px;
+    left: 43px;
+
 }
 .button-add-div:hover{
     border: 2px solid  hsl(14, 86%, 42%);

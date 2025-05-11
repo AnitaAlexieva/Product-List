@@ -22,11 +22,11 @@ export default function DessertItem() {
         </div>
        
         {isAdded ? (
-           <div className="button-add-div">
+           <div className="button-added-div">
           <div className="added-btn">
-            <button onClick={smallCount}>-</button>
+            <button className="operation" onClick={smallCount}>-</button>
             <p>{count}</p>
-            <button onClick={() => setCount(count + 1)}>+</button>
+            <button className="operation" onClick={() => setCount(count + 1)}>+</button>
           </div>
           </div>
         ):(
