@@ -73,6 +73,11 @@ h3{
     background-color:  hsl(14, 86%, 42%);
     color: white;
 }
+.operation:hover{
+    cursor: pointer;
+    background-color: white;
+    color:  hsl(14, 86%, 42%);;
+}
 .button-add-div{
     display: flex;
     border: 2px solid hsl(12, 20%, 44%);
