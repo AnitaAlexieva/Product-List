@@ -2,15 +2,15 @@ import { useState } from "react"
 
 export default function DessertItem() {
   const [isAdded, setIsAdded] = useState(false);
-  const [count, setCount] = useState(0);
+  const [count, setCount] = useState(1);
 
   const smallCount = () =>{
-    if(count > 0){
+    if(count > 1){
       setCount(count - 1)
      
     }else{
-      setCount(0);
-      
+      setCount(0)
+      setIsAdded(false)
     }
   }
 
@@ -32,7 +32,7 @@ export default function DessertItem() {
         ):(
            <div className="button-add-div">
           <img src="\images\icon-add-to-cart.svg" alt="add-to-cart" />
-          <button className="add-cart-btn" onClick={() => setIsAdded(true)}>Add to Cart</button>
+          <button className="add-cart-btn" onClick={() => {setIsAdded(true); setCount(1)}}>Add to Cart</button>
           </div>
         )}
         
