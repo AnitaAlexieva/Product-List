@@ -117,6 +117,11 @@ h3{
     color: white;
     font-size: 15px;
 }
+.confirm-btn:hover{
+    background-color: hsl(13.98deg 84.71% 30.78%);
+    cursor: pointer;
+    border: 2px solid hsl(13.98deg 84.71% 30.78%);
+}
 .operation{
     border-radius: 50%;
     border: 1px solid white;
