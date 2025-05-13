@@ -19,6 +19,9 @@ h1{
     font-weight: 900;
     font-style: normal;     
 }
+p{
+    font-family: "Lato", sans-serif;
+}
 h3{
     color:  hsl(14, 86%, 42%);
     font-family: "Lato", sans-serif;
@@ -121,6 +124,34 @@ h3{
     background-color: hsl(13.98deg 84.71% 30.78%);
     cursor: pointer;
     border: 2px solid hsl(13.98deg 84.71% 30.78%);
+}
+.quantity{
+    color:  hsl(14, 86%, 42%);
+    font-family: "Lato", sans-serif;
+    font-weight: 900;
+    font-size: 15px;
+    margin-right: 5px;
+}
+.one-price{
+    color:  hsl(12, 20%, 44%);
+     font-family: "Lato", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+}
+h2{
+    font-family: "Lato", sans-serif;
+    font-weight: 800;
+    margin-top: 30px;
+}
+span{
+    font-family: "Lato", sans-serif;
+    font-weight: bold;
+}
+.all-price{
+    color:  hsl(12, 20%, 44%);
+     font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-size: 15px;
 }
 .operation{
     border-radius: 50%;
