@@ -93,6 +93,9 @@ h3{
 .img-dessert-div{
     position: relative;
 }
+.img-dessert.selected{
+    border: 2px solid  hsl(14, 86%, 42%);;
+}
 .add-cart-btn{
     border: none;
     background-color: aliceblue;

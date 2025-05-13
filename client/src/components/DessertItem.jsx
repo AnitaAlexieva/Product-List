@@ -16,8 +16,8 @@ export default function DessertItem() {
 
     return(
         <div className="dessert">
-        <div className="img-dessert-div">
-          <img className="img-dessert" src="\images\image-waffle-tablet.jpg" alt="dessert" />
+        <div className="img-dessert-div" >
+          <img className={isAdded ? "img-dessert selected":"img-dessert"} src="\images\image-waffle-tablet.jpg" alt="dessert" />
 
         </div>
        
