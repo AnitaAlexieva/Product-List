@@ -69,8 +69,13 @@ h3{
 .close-mark{
    border: 1px solid  hsl(7, 20%, 60%);
     border-radius: 50px;
-    padding: 5px;
+    padding: 4px;
     margin-top: 20px;
+}
+.close-mark:hover{
+    cursor: pointer;
+    border:1px solid black;
+    filter: brightness(0) saturate(100%);
 }
 .all-desserts{
     display: flex;
