@@ -2,16 +2,15 @@ import { useState } from "react";
 import DessertItem from "./DessertItem";
 
 export default function DessertsPage() {
-    return(
-        <div className="app-wrapper">
-        <div className="app-content">
-          <div className="desserts-container">
-            <h1>Desserts</h1>
-            <div className="all-desserts">
-            <DessertItem/>
-            <DessertItem/>
-            <DessertItem/>
-            <DessertItem/>
+  const [showDialog, setShowDialog] = useState(false);
+
+  const handleConfirm = () => {
+    setShowDialog(true);
+  };
+
+  const closeDialog = () => {
+    setShowDialog(false);
+  };
 
   return (
     <div className="app-wrapper">
