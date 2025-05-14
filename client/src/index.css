@@ -254,6 +254,11 @@ span{
     cursor: pointer;
     border-radius: 50px;
 }
+.close-dialog-btn:hover{
+   background-color: hsl(13.98deg 84.71% 30.78%);
+    cursor: pointer;
+  
+}
 .cart-descr-confirmed{
     display: flex;
     gap: 20px;
