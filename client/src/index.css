@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poetsen+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap');
 
+body{
+    padding: 0;
+    margin: 0;
+    min-width: 520px;
+}
 .app-wrapper{
     padding: 40px 80px;
 }
@@ -298,4 +303,26 @@ span{
 .order-total-p{
     color:  hsl(12, 20%, 44%);
     margin-top: 10px;
+}
+
+@media (max-width: 375px) {
+  .app-content {
+    flex-direction: column;
+  }
+  .app-wrapper{
+    padding: 0;
+    min-width: 520px;
+  }
+  .img-dessert{
+    max-width: none;
+    max-height: none;
+  }.all-desserts{
+    min-width: 480px;
+    padding: 20px;
+    justify-content: center;
+  }
+  h1{
+    padding:0 60px;
+    font-size: 55px;
+  }
 }
