@@ -325,4 +325,22 @@ span{
     padding:0 60px;
     font-size: 55px;
   }
+  .cart-container{
+    padding: 0 40px;
+  }
+  .full-cart{
+    justify-content: space-between;
+    gap: none;
+  }
+  .order-total-div{
+    justify-content: space-between;
+    gap: none;
+  }
+  .confirm-div{
+    margin: 30px 0;
+  }
+  .confirm-btn{
+    padding: 20px 100px;
+    border-radius: 30px;
+  }
 }
