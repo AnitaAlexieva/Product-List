@@ -348,4 +348,7 @@ span{
   .confirmation-dialog{
     max-width: 470px;
   }
+  .button-added-div{
+    left: 125px;
+  }
 }
