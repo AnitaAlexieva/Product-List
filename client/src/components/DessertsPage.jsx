@@ -3,6 +3,7 @@ import DessertItem from "./DessertItem";
 
 export default function DessertsPage() {
   const [showDialog, setShowDialog] = useState(false);
+  const [isAdded, setIsAdded] = useState(false);
 
   const handleConfirm = () => {
     setShowDialog(true);
@@ -12,6 +13,9 @@ export default function DessertsPage() {
     setShowDialog(false);
   };
 
+  const isAddedInfo = (isAdded) =>{
+    setIsAdded(isAdded)
+  }
   return (
     <div className="app-wrapper">
       {showDialog && (
@@ -46,7 +50,7 @@ export default function DessertsPage() {
         <div className="desserts-container">
           <h1>Desserts</h1>
           <div className="all-desserts">
-            <DessertItem />
+            <DessertItem onAddedDessert={isAddedInfo} />
             <DessertItem />
             <DessertItem />
             <DessertItem />
@@ -55,7 +59,8 @@ export default function DessertsPage() {
 
         <div className="cart-container">
           <h3>Your Cart (0)</h3>
-          <div className="cart-2">
+          {isAdded ? (
+             <div className="cart-2">
             <div className="full-cart">
               <div className="cart-descr">
                 <h4>Classic Tiramisu</h4>
@@ -84,6 +89,15 @@ export default function DessertsPage() {
               <button className="confirm-btn" onClick={handleConfirm}>Confirm Order</button>
             </div>
           </div>
+          ):(
+           <div className="cart">
+              <div className="emty-cart">
+              <img src="\images\illustration-empty-cart.svg" alt="emty" />
+              <p>Your added items will appear here </p>
+              </div>
+            </div>
+          )}
+         
         </div>
       </div>
     </div>
