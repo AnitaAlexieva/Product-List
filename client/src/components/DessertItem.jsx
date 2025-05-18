@@ -11,6 +11,7 @@ export default function DessertItem({onAddedDessert}) {
     }else{
       setCount(0)
       setIsAdded(false)
+      onAddedDessert(false)
     }
   }
 
