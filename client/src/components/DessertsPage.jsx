@@ -1,10 +1,15 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import DessertItem from "./DessertItem";
+import requester from "../utils/requester";
 
 export default function DessertsPage() {
   const [showDialog, setShowDialog] = useState(false);
   const [isAdded, setIsAdded] = useState(false);
 
+  useEffect(() =>{
+      requester('/data.json')
+      .then(res => console.log(res))
+  },[])
   const handleConfirm = () => {
     setShowDialog(true);
   };
@@ -16,6 +21,7 @@ export default function DessertsPage() {
   const isAddedInfo = (isAdded) =>{
     setIsAdded(isAdded)
   }
+
   return (
     <div className="app-wrapper">
       {showDialog && (
