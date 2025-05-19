@@ -1,6 +1,6 @@
 import { useState } from "react"
 
-export default function DessertItem({onAddedDessert}) {
+export default function DessertItem({onAddedDessert,desserts}) {
   const [isAdded, setIsAdded] = useState(false);
   const [count, setCount] = useState(1);
 
@@ -15,7 +15,7 @@ export default function DessertItem({onAddedDessert}) {
     }
   }
 
-
+  console.log(desserts)
     return(
         <div className="dessert">
         <div className="img-dessert-div" >

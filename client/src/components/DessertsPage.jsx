@@ -5,11 +5,13 @@ import requester from "../utils/requester";
 export default function DessertsPage() {
   const [showDialog, setShowDialog] = useState(false);
   const [isAdded, setIsAdded] = useState(false);
+  const [desserts, setDesserts] = useState({})
 
   useEffect(() =>{
       requester('/data.json')
-      .then(res => console.log(res))
+      .then(res => setDesserts(res))
   },[])
+
   const handleConfirm = () => {
     setShowDialog(true);
   };
@@ -56,7 +58,7 @@ export default function DessertsPage() {
         <div className="desserts-container">
           <h1>Desserts</h1>
           <div className="all-desserts">
-            <DessertItem onAddedDessert={isAddedInfo} />
+            <DessertItem desserts={desserts} onAddedDessert={isAddedInfo} />
             <DessertItem />
             <DessertItem />
             <DessertItem />
