@@ -5,7 +5,7 @@ import requester from "../utils/requester";
 export default function DessertsPage() {
   const [showDialog, setShowDialog] = useState(false);
   const [isAdded, setIsAdded] = useState(false);
-  const [desserts, setDesserts] = useState({})
+  const [desserts, setDesserts] = useState([])
 
   useEffect(() =>{
       requester('/data.json')
@@ -58,10 +58,15 @@ export default function DessertsPage() {
         <div className="desserts-container">
           <h1>Desserts</h1>
           <div className="all-desserts">
-            <DessertItem desserts={desserts} onAddedDessert={isAddedInfo} />
-            <DessertItem />
-            <DessertItem />
-            <DessertItem />
+            {
+              desserts.map((desserts,index)=>(
+                <DessertItem 
+                key={index}
+                desserts={desserts} 
+                onAddedDessert={isAddedInfo} 
+                />
+              ))
+            }
           </div>
         </div>
 
@@ -79,6 +84,7 @@ export default function DessertsPage() {
                 </div>
               </div>
               <div className="close-mark-div">
+                <img className="close-mark" src="assets\images\icon-remove-item.svg" alt="close" />
               </div>
             </div>
 
