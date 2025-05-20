@@ -79,7 +79,6 @@ export default function DessertsPage() {
                 </div>
               </div>
               <div className="close-mark-div">
-                <img className="close-mark" src="\images\icon-remove-item.svg" alt="close" />
               </div>
             </div>
 
@@ -89,7 +88,7 @@ export default function DessertsPage() {
             </div>
 
             <div className="natural">
-              <img src="\images\icon-carbon-neutral.svg" alt="" />
+              <img src="assets\images\icon-carbon-neutral.svg" alt="" />
               <p>This is a <span>carbon-natural</span> delivery</p>
             </div>
 
@@ -100,7 +99,7 @@ export default function DessertsPage() {
           ):(
            <div className="cart">
               <div className="emty-cart">
-              <img src="\images\illustration-empty-cart.svg" alt="emty" />
+              <img src="assets\images\illustration-empty-cart.svg" alt="emty" />
               <p>Your added items will appear here </p>
               </div>
             </div>

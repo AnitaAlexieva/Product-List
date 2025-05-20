@@ -19,7 +19,6 @@ export default function DessertItem({onAddedDessert,desserts}) {
     return(
         <div className="dessert">
         <div className="img-dessert-div" >
-          <img className={isAdded ? "img-dessert selected":"img-dessert"} src="\images\image-waffle-tablet.jpg" alt="dessert" />
 
         </div>
        
@@ -33,7 +32,7 @@ export default function DessertItem({onAddedDessert,desserts}) {
           </div>
         ):(
            <div className="button-add-div">
-          <img src="\images\icon-add-to-cart.svg" alt="add-to-cart" />
+          <img src="assets\images\icon-add-to-cart.svg" alt="add-to-cart" />
           <button className="add-cart-btn" onClick={() => {setIsAdded(true); setCount(1); onAddedDessert(true)}}>Add to Cart</button>
           </div>
         )}
