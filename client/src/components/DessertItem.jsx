@@ -14,11 +14,10 @@ export default function DessertItem({onAddedDessert,desserts}) {
       onAddedDessert(false)
     }
   }
-
-  console.log(desserts)
     return(
         <div className="dessert">
         <div className="img-dessert-div" >
+          <img className={isAdded ? "img-dessert selected":"img-dessert"} src={desserts.image.tablet} alt="dessert" />
 
         </div>
        
@@ -38,9 +37,9 @@ export default function DessertItem({onAddedDessert,desserts}) {
         )}
         
         <div className="dessert-description">
-          <h4 className="simple-name">Waffle</h4>
-          <h3 className="whole-name">Waffle with Berries</h3>
-          <p className="price-p">$6.50</p>  
+          <h4 className="simple-name">{desserts.category}</h4>
+          <h3 className="whole-name">{desserts.name}</h3>
+          <p className="price-p">${desserts.price.toFixed(2)}</p>  
         </div>
       </div>
     )
