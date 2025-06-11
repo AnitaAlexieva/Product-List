@@ -304,6 +304,10 @@ span{
     color:  hsl(12, 20%, 44%);
     margin-top: 10px;
 }
+.attribution{
+    text-align: center;
+    margin-top: 80px;
+}
 
 @media (max-width: 375px) {
   .app-content {

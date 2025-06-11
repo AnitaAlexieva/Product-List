@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import DessertItem from "./DessertItem";
 import requester from "../utils/requester";
+import Attribution from "./Attribution";
 
 export default function DessertsPage() {
   const [showDialog, setShowDialog] = useState(false);
@@ -113,6 +114,7 @@ export default function DessertsPage() {
          
         </div>
       </div>
+      <Attribution/>
     </div>
   );
 }
